@@ -2,6 +2,8 @@
 
 A little app to track time.
 
+![](https://github.com/morrisjobke/time/blob/master/example.png)
+
 ## Features
 
 * start/stop timer
