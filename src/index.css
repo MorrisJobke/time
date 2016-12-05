@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  padding: 0;
+  margin: 0x;
+  color: #111;
+}
+
+#root,
+.footer {
+  max-width: 600px;
+  margin: auto;
+}
+
+.footer {
+  text-align: center;
+  opacity: .5;
+  font-size: 10px;
+}
+
+.footer a {
+  color: #333;
+  font-size: 10px;
+}
+
+.stats {
+  float: right;
+  text-align: right;
+  color: rgba(0, 0, 0, .4)
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.dayList > li {
+  border-bottom: rgba(0, 0, 0, .2) solid 1px;
+}
+.dayList > li:last-child{
+  border-bottom: none;
+}
+
+.slot {
+  display: flex;
+  height: 50px;
+  box-sizing: content-box;
+  background-color: rgba(1, 97, 153, 0.05);
+  padding: 7px 16px;
+  margin: 5px 0;
+}
+
+.slot:hover,
+.slot:focus {
+  box-shadow: 0 0 5px rgba(1, 97, 153, 0.3);
+  background-color: rgba(1, 97, 153, 0.3);
+  /*cursor: pointer;*/
+}
+.startTracking:hover,
+.startTracking:focus {
+  cursor: pointer;
+}
+
+.startTracking .text {
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2em;
+}
+
+.slot .duration,
+.slot .details {
+  width: 45%;
+  height: 50px;
+  margin: auto;
+}
+
+.slot .duration {
+  line-height: 50px;
+  font-size: 2em;
+  text-align: right;
+}
+
+.slot .details {
+  line-height: 25px;
+  color: rgba(0, 0, 0, .4)
+}
+
+.daySlot {
+  padding: 10px 0;
+}
+
+.day {
+  color: rgba(0, 0, 0, .7)
+}
+
+.daySlot .day .totalDuration {
+  float: right;
+}
