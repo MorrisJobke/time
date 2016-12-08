@@ -269,42 +269,8 @@ class App extends Component {
     } else {
       console.log('loaded dummy data');
       this.state = {
-        daySlots: [
-          {
-            date: '2016-11-21',
-            slots: [{
-              id: 1,
-              start: "2016-11-21 09:44:00 UTC+1",
-              end: "2016-11-21 12:20:00 UTC+1",
-            },
-            {
-              id: 2,
-              start: "2016-11-21 13:30:00 UTC+1",
-              end: "2016-11-21 18:54:00 UTC+1",
-            }]
-          },
-          {
-            date: '2016-11-22',
-            slots: [{
-              id: 1,
-              start: "2016-11-22 09:40:00 UTC+1",
-              end: "2016-11-22 11:46:00 UTC+1",
-            },{
-              id: 2,
-              start: "2016-11-22 13:14:00 UTC+1",
-              end: "2016-11-22 19:23:00 UTC+1",
-            }]
-          },
-          {
-            date: '2016-11-23',
-            slots: [{
-              id: 1,
-              start: "2016-11-23 09:27:00 UTC+1",
-              end: "2016-11-23 12:24:00 UTC+1",
-            }]
-          },
-        ],
-        startedAt: '2016-11-23 13:51:00 UTC+1',
+        daySlots: [],
+        startedAt: null,
       };
     }
   }
