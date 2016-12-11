@@ -365,6 +365,13 @@ class App extends Component {
     console.log('stored to localStorage');
     localStorage.setItem('timeTrackerState', JSON.stringify(this.state));
   }
+  handleReset() {
+    if (confirm('Do you really want to erase all entries?') === true) {
+      console.log('deleted all entries in localStorage');
+      localStorage.setItem('timeTrackerState','{"daySlots": [],"startedAt": null}');
+      location.reload();
+    }
+  }
   render() {
     const daySlots = underscore
       .sortBy(this.state.daySlots, 'date')
@@ -383,6 +390,7 @@ class App extends Component {
         <StartButtonContent startedAt={this.state.startedAt} onClick={() => this.handleClick()} />
         <ul className="dayList">{daySlots}</ul>
         <button onClick={() => console.log(JSON.stringify(this.state))}>Export</button>
+        <button style={{float: "right"}} onClick={() => this.handleReset()}>Reset</button>
       </div>
     );
   }
