@@ -274,37 +274,37 @@ class App extends Component {
             date: '2016-11-21',
             slots: [{
               id: 1,
-              start: "2016-11-21 09:44:00 UTC+1",
-              end: "2016-11-21 12:20:00 UTC+1",
+              start: "2016-11-21T09:44:00+01:00",
+              end: "2016-11-21T12:20:00+01:00",
             },
             {
               id: 2,
-              start: "2016-11-21 13:30:00 UTC+1",
-              end: "2016-11-21 18:54:00 UTC+1",
+              start: "2016-11-21T13:30:00+01:00",
+              end: "2016-11-21T18:54:00+01:00",
             }]
           },
           {
             date: '2016-11-22',
             slots: [{
               id: 1,
-              start: "2016-11-22 09:40:00 UTC+1",
-              end: "2016-11-22 11:46:00 UTC+1",
+              start: "2016-11-22T09:40:00+01:00",
+              end: "2016-11-22T11:46:00+01:00",
             },{
               id: 2,
-              start: "2016-11-22 13:14:00 UTC+1",
-              end: "2016-11-22 19:23:00 UTC+1",
+              start: "2016-11-22T13:14:00+01:00",
+              end: "2016-11-22T19:23:00+01:00",
             }]
           },
           {
             date: '2016-11-23',
             slots: [{
               id: 1,
-              start: "2016-11-23 09:27:00 UTC+1",
-              end: "2016-11-23 12:24:00 UTC+1",
+              start: "2016-11-23T09:27:00+01:00",
+              end: "2016-11-23T12:24:00+01:00",
             }]
           },
         ],
-        startedAt: '2016-11-23 13:51:00 UTC+1',
+        startedAt: '2016-11-23T13:51:00+01:00',
       };
     }
   }
@@ -332,7 +332,7 @@ class App extends Component {
         const day = date.getDate();
         const hours = date.getHours();
         const minutes = date.getMinutes();
-        return date.getFullYear() + '-' + (month < 10 ? '0' : '') + month + '-' + (day < 10 ? '0' : '') + day + ' ' + (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes + ':00 UTC+1';
+        return date.getFullYear() + '-' + (month < 10 ? '0' : '') + month + '-' + (day < 10 ? '0' : '') + day + 'T' + (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes + ':00+01:00';
       });
       if (start !== end) {
         if (index !== -1) {
